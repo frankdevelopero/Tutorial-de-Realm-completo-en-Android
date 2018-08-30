@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Realm Tutorial</string>
+    <string name="hint_titulo">Titulo del libro</string>
+    <string name="titulo_alerta">Nueva categoría</string>
+    <string name="mensaje_alerta">Agregar nueva categoría</string>
+    <string name="toast_mensaje_nombre_vacio">Por favor escriba el titulo de la categoria</string>
+    <string name="hint_image">Imagen</string>
+    <string name="hint_descripcion">Descripción</string>
+    <string name="mensaje_editar_alert">Editar</string>
+</resources>
