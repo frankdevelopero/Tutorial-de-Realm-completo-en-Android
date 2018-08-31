@@ -1,8 +1,9 @@
 package com.frankdeveloper.realmtutorial.modelos;
 
 import com.frankdeveloper.realmtutorial.aplicacion.MiAplicacion;
-
 import java.util.Date;
+
+import io.realm.RealmList;
 import io.realm.RealmObject;
 
 public class LibroModelo extends RealmObject{
@@ -12,6 +13,9 @@ public class LibroModelo extends RealmObject{
     private String imagen;
     private String descripcion;
     private Date fecha;
+
+    //Para relacionar con otros modelos
+    //private RealmList<TuModelo> listaObjeto;
 
     //Real necesita un contructo vacio
     public LibroModelo() {

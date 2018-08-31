@@ -1,7 +1,6 @@
 package com.frankdeveloper.realmtutorial.vistas.actividades;
 
 import android.app.AlertDialog;
-import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -88,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements RealmChangeListen
 
     public void alertNuevoLibro(){
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        final View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.dialogo_nueva_categoria, null);
+        final View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.dialogo_nuevo_libro, null);
         builder.setView(view);
 
         final EditText edtTitulo = view.findViewById(R.id.edtTitulo);
@@ -123,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements RealmChangeListen
     public void alertEditarLibro(final LibroModelo libroModelo){
 
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        final View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.dialogo_nueva_categoria, null);
+        final View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.dialogo_nuevo_libro, null);
         builder.setView(view);
 
         final EditText edtTitulo = view.findViewById(R.id.edtTitulo);
@@ -172,7 +171,6 @@ public class MainActivity extends AppCompatActivity implements RealmChangeListen
         LibroModelo libroModelo = new LibroModelo(nombre, descripcion,imagen);
         realm.copyToRealm(libroModelo);
         realm.commitTransaction();
-
     }
 
     public void eliminarLibro(View view){

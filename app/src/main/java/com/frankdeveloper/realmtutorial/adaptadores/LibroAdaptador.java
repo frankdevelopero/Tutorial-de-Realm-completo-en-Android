@@ -19,7 +19,8 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 
 
-public class LibroAdaptador extends RecyclerView.Adapter<LibroAdaptador.ViewHolderLibro>  implements View.OnClickListener, View.OnLongClickListener{
+public class LibroAdaptador extends RecyclerView.Adapter<LibroAdaptador.ViewHolderLibro>
+        implements View.OnClickListener, View.OnLongClickListener{
 
     private Context context;
     private List<LibroModelo> listaCategoria;
@@ -31,12 +32,10 @@ public class LibroAdaptador extends RecyclerView.Adapter<LibroAdaptador.ViewHold
         this.listaCategoria = listaCategoria;
     }
 
-
-
     @NonNull
     @Override
     public ViewHolderLibro onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_categoria_recycler,parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_libro_recycler,parent, false);
         view.setOnClickListener(this);
         view.setOnLongClickListener(this);
         return new ViewHolderLibro(view);
@@ -98,6 +97,5 @@ public class LibroAdaptador extends RecyclerView.Adapter<LibroAdaptador.ViewHold
 
         }
     }
-
 
 }

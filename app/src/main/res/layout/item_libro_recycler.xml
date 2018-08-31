@@ -16,8 +16,8 @@
         <ImageView
             android:id="@+id/imgLibro"
             android:scaleType="centerCrop"
-            android:layout_width="80dp"
-            android:layout_height="80dp" />
+            android:layout_width="@dimen/with_image"
+            android:layout_height="@dimen/height_image" />
 
         <LinearLayout
             android:layout_marginStart="@dimen/margin_fab"
@@ -35,7 +35,7 @@
 
             <TextView
                 android:id="@+id/txtDescripcion"
-                android:text="Una pequeña descripción del libro"
+                android:text="@string/placeholder_descripcion"
                 android:textSize="16sp"
                 android:maxLines="2"
                 android:layout_width="wrap_content"
@@ -43,7 +43,7 @@
 
             <TextView
                 android:id="@+id/txtFecha"
-                android:text="10/06/2018"
+                android:text="@string/placeholder_fecha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
